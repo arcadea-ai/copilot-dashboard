@@ -1,0 +1,24 @@
+# Ignore Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+**/.env
+
+# Ignore IDE/editor configurations
+.vscode/
+.idea/
+*.swp
+
+# Ignore logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Ignore Docker-related files
+.dockerignore
+Dockerfile
+
+# Ignore all JSON files in src/data
+src/data/*.json
