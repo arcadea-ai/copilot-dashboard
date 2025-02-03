@@ -1,6 +1,9 @@
 # GitHub Copilot Dashboard
 
 GitHub Copilot Dashboard is a visual interface to monitor and analyze GitHub Copilot metrics.
+<p align="left">
+<img src="artifacts/homepage.png" alt="Homepage" width="50%">
+</p>
 
 ## Setup
 
