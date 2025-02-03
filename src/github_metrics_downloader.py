@@ -9,13 +9,14 @@ load_dotenv('.env')
 
 class GithubMetricsDownloader:
     def __init__(self):
-        self.api_key = os.getenv("GITHUB_API_KEY")
-        self.org = "arcadea-ai"
+        self.api_key = str(os.getenv("GITHUB_API_KEY"))
+        self.org = str(os.getenv("GITHUB_ORG_NAME"))
+        self.api_version = str(os.getenv("GITHUB_API_VERSION", "2022-11-28"))
         self.endpoint = f"https://api.github.com/orgs/{self.org}/copilot/usage"
         self.headers = {
             "Accept": "application/vnd.github+json",
             "Authorization": f"Bearer {self.api_key}",
-            "X-GitHub-Api-Version": "2022-11-28"
+            "X-GitHub-Api-Version": self.api_version
         }
         self.data_dir = Path("data")
         self.data_dir.mkdir(exist_ok=True)

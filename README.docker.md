@@ -27,13 +27,8 @@ This command will:
 
 
 # Run the Container
-Using Environment Variables (Recommended)
 ```
 docker run -p 8501:8501 --env-file <path/to/.env> copilot-dashboard
-```
-or manually pass the GitHub API key:
-```
-docker run -p 8501:8501 -e GITHUB_API_KEY=your_token_here copilot-dashboard
 ```
 This will:
 - Map the container’s port 8501 to the host machine.

@@ -34,6 +34,8 @@ pip install -r requirements.txt
 Create a .env file inside the src directory and add the following:
 ```sh
 GITHUB_API_KEY=<your_personal_access_token>
+GITHUB_ORG_NAME=<your_github_org_name>
+GITHUB_API_VERSION=<github_api_version> # Default is 2022-11-28
 ```
 
 ### 4. Generate a GitHub API Key
