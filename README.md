@@ -40,8 +40,17 @@ GITHUB_API_KEY=<your_personal_access_token>
 GITHUB_ORG_NAME=<your_github_org_name>
 GITHUB_API_VERSION=<github_api_version> # Default is 2022-11-28
 ```
+### 4. Enable GitHub Copilot Metric API
 
-### 4. Generate a GitHub API Key
+Ensure that the GitHub Metric API is enabled for your organization:
+
+1. Go to **Organization settings**.
+2. Navigate to **Copilot**.
+3. Click on **Policies**.
+4. Enable **Copilot Metrics API access**.
+
+
+### 5. Generate a GitHub API Key
 Follow these steps to generate a GitHub API key:
 
 1. Click on your profile icon in the top-right corner of GitHub.
@@ -59,7 +68,7 @@ Follow these steps to generate a GitHub API key:
 ```env
 GITHUB_API_KEY=your_generated_token_here
 ```
-### 5. Run the Dashboard
+### 6. Run the Dashboard
 Launch the Streamlit dashboard with bellow command:
 ```sh
 streamlit run app.py
