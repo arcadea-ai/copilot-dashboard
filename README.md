@@ -5,13 +5,40 @@ GitHub Copilot Dashboard is a visual interface to monitor and analyze GitHub Cop
 <img src="artifacts/homepage.png" alt="Homepage" width="70%">
 </p>
 
-## Setup
+## Clone Copilot Dashboard Project
+- With HTTPS:
+`git clone https://github.com/arcadea-ai/copilot-dashboard.git`
+- With SSH:
+`git clone git@github.com:arcadea-ai/copilot-dashboard.git`
+<br>
+Then `cd` to `src` folder
+
+## Setup Project
 
 Follow these steps to set up and run the dashboard:
 
 ### 1. Set Up Python Environment
 
-You can use either `venv` or `conda` to create an isolated Python environment.
+You can use either `venv` (built-in to python) or `conda` (Anaconda) to create an isolated Python environment.
+
+**Option 1: Install Python 3.10** 
+Download from: [python.org](https://wiki.python.org/moin/BeginnersGuide/Download)  
+Install and check:  
+```sh
+python3.10 --version
+```
+Or you can go with Anaconda
+
+**Option 2: Install Anaconda**
+Download from: [anaconda.com](https://www.anaconda.com/docs/getting-started/anaconda/install)
+Install and check:  
+```sh
+conda --version
+```
+```sh
+conda init
+```
+Now close the PowerShell and start a new one
 
 #### Using `venv` (Python 3.10)
 ```sh
@@ -27,7 +54,8 @@ conda activate copilot-dashboard
 ```
 
 ### 2. Install Dependencies
-Navigate to the `src` directory and install the required packages:
+- Navigate to the `src` directory (Skip this if you already in `src` folder)
+- Install the required packages:
 ```sh
 cd src
 pip install -r requirements.txt
